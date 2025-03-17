@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:money_management/screen/home_screen.dart';
 
 void main(){
   runApp(const MoneyManager());
@@ -9,6 +10,9 @@ class MoneyManager extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: HomeScreen(),
+    );
   }
 }
